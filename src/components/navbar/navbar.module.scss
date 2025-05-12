@@ -1,0 +1,40 @@
+.navBar {
+    background-color: white;
+
+    .uppernav {
+        z-index: -1;
+        background-color: white;
+    }
+
+    .lowernav {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgb(214, 214, 214);
+        padding: 0.5rem;
+        gap: 1.75rem;
+        padding-left: 10px;
+        background-color: white;
+        .sidebarController {
+            font-size: 0.5rem;
+            cursor: pointer;
+        }
+
+        .activeNav {
+            position: relative;
+            font-weight: 600;
+            color: #565D6D;
+           
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -0.25rem;
+                height: 0.25rem;
+                width: 100%;
+                border-radius: 0.1rem;
+                background-color: #565D6D;
+            }
+        }
+    }
+}

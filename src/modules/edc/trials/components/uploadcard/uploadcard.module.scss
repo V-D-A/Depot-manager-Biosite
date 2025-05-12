@@ -1,0 +1,60 @@
+.uploadedFileDoc {
+  width: 250px;
+  border-radius: 0.5rem;
+  border: 1.5px solid rgb(205, 210, 221);
+  padding: 1rem;
+  position: relative;
+
+  .iconsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .moreOptionsIcon {
+      color: rgb(126, 126, 126);
+    }
+  }
+
+  .fileDetails {
+    margin-top: 0.75rem;
+    .fileCategory {
+      padding: 0.2rem 0.75rem;
+      border-radius: 0.25rem;
+      font-weight: 500;
+      color: white;
+      background-color: rgb(163, 192, 235);
+    }
+    .fileName {
+      margin-top: 0.25rem;
+      font-size: 1rem;
+      color: rgb(86, 93, 99);
+      font-weight: 600;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 200px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: rgb(175, 175, 175);
+      font-weight: 500;
+    }
+
+    .progressBar {
+      background-color: rgb(227, 234, 240);
+      height: 0.45rem;
+      margin-top: 0.25rem;
+      div {
+        background-color: rgb(68, 151, 245) !important;
+      }
+    }
+  }
+}
