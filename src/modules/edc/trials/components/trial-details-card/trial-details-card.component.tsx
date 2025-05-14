@@ -80,7 +80,7 @@ const TrialDetailsCard: React.FC<TrialdDetailsCardProps> = (props) => {
             size={32}
             className="bg-gray-200 p-2 rounded-full cursor-pointer"
             onClick={() => {
-              props.setShowIndicationModal?.(!props.showIndicationModal);
+              // props.setShowIndicationModal?.(!props.showIndicationModal);
             }}
           />
         </div>
@@ -193,7 +193,7 @@ const TrialDetailsCard: React.FC<TrialdDetailsCardProps> = (props) => {
             size={32}
             className="bg-gray-200 p-2 rounded-full cursor-pointer"
             onClick={() => {
-              props.setShowSponsorModal?.(!props.showSponsorModal);
+              // props.setShowSponsorModal?.(!props.showSponsorModal);
             }}
           />
         </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { ITrial } from "../../types/trial.types";
-import { useDispatch } from "react-redux";
-import { setActiveTrialId } from "@/lib/store/features/trialsSlice";
+// import { useDispatch } from "react-redux";
+// import { setActiveTrialId } from "@/lib/store/features/trialsSlice";
 import { Button } from "@/components/ui/button";
 
 interface TrialProps {
@@ -11,10 +11,10 @@ interface TrialProps {
 
 const TrialCard: React.FC<TrialProps> = ({ data }) => {
   const router = useRouter();
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
 
   const routeToTrialInfo = () => {
-    dispatch(setActiveTrialId(data.id))
+    // dispatch(setActiveTrialId(data.id))
     router.push(`/edc/trials/${data.id}`)
   }
 

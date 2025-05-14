@@ -9,7 +9,7 @@ import { ITrial } from "@/components/trialCard/types/trial.types";
 import TrialCard from "@/components/trialCard/TrialCard";
 // import TrialCard from "@/modules/edc/trials/components/trial-card/trial-card.component";
 
-export const trials: ITrial[] = [
+const trials: ITrial[] = [
   {
     id: "0",
     title: "Trial A",

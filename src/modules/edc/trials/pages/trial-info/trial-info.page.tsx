@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 // import { useRouter } from "next/navigation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
@@ -113,18 +113,20 @@ const sponsorCard=
     "phase": "Phase 4",
     "phone": null,
     "sponsor": null,
-    "startDate": "2025-04-24T00:00:00+05:30",
+    "startDate": new Date("2025-04-24T00:00:00+05:30"),
     "studyArms": "2 : 1 : 1- Active : Comparator : Placebo",
     "studyType": "Double Blind",
-    "subjectsCount": 7
+    "subjectsCount": 7,
+    " studyTitle": "Phase III Randomized, Double-Blind, Placebo-Controlled Trial", // Add this
+  "protocolNumber": "PROT-1234" // Add this
   }
   
   
 
 const TrialInfo: React.FC<Props> = ({ trialId }) => {
   console.log(trialId)
-  const [showSponsorModel, setShowSponsorModal] = useState(false);
-  const [showIndicationModel, setShowIndicationModel] = useState(false);
+  // const [showSponsorModel, setShowSponsorModal] = useState(false);
+  // const [showIndicationModel, setShowIndicationModel] = useState(false);
 
   return (
     <>
@@ -211,11 +213,13 @@ const TrialInfo: React.FC<Props> = ({ trialId }) => {
              {sponsorCard && (
                <TrialDetailsCard
                  {...sponsorCard}
+                  studyTitle="Your Study Title Here"
+  protocolNumber="Your Protocol Number Here"
                 
-                 setShowSponsorModal={setShowSponsorModal}
-                 showSponsorModal={showSponsorModel}
-                 setShowIndicationModal={setShowIndicationModel}
-                 showIndicationModal={showIndicationModel}
+                //  setShowSponsorModal={setShowSponsorModal}
+                //  showSponsorModal={showSponsorModel}
+                //  setShowIndicationModal={setShowIndicationModel}
+                //  showIndicationModal={showIndicationModel}
                />
              )}
            </div>
